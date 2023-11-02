@@ -25,3 +25,40 @@
 
     9. Print out both "store" and "candy"
 */
+
+const banana = {
+    name: "banana",
+    quantity: 1,
+    price: 1.95
+};
+const apple = {
+    name: "apple",
+    quantity: 1,
+    price: 1.46
+};
+const candy = {
+    name: "candy",
+    quantity: 1,
+    price: 3.50
+};
+const store = new Map([
+    ["storeNumber", 5],
+    ["locationCity", "Milan"],
+    ["locationCountry", "italy"]
+]);
+store.set("products", [banana, apple, candy]);
+console.log(store);
+for (let i = 0; i <= store.get("products").length; i++) {
+    console.log(store.get("products")[i]);
+
+}
+console.log(store.get("products")[2]);
+
+store.get("products")[0].price = 1.75;
+console.log(store);
+console.log(banana)
+
+candy.price = 4.99;
+
+console.log(store);
+console.log(candy);

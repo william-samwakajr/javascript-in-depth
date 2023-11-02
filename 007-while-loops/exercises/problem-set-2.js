@@ -4,3 +4,10 @@
 
     Do the same for all odd numbers as well.
 */
+let counter = 10;
+while (counter < 40) {
+    counter++
+    if (counter % 2 == 0) {
+        console.log(counter);
+    }
+}

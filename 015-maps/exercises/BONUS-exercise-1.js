@@ -17,3 +17,12 @@
     5. Print out each of the 2 values for the keys you just added.
        How does this differ from an Object?
 */
+const myConsole = new Map([
+    ["log", (message) => { console.log(message) }]
+])
+myConsole.get("log")("hello");
+myConsole.set(1, "number one");
+myConsole.set("1", "string one");
+
+myConsole.get("log")(myConsole.get(1));
+myConsole.get("log")(myConsole.get("1"));

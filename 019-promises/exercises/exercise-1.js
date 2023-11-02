@@ -10,3 +10,23 @@
 
     HINT: Use setTimeout for the delay
 */
+console.log("Program started");
+const pending = new Promise((resolve, reject) => {
+    let bookstack = 5
+    if (bookstack == 4) {
+        resolve("Program complete")
+    } else {
+        reject("program failure ")
+    }
+});
+pending.then((message) => {
+        return setTimeout(() => {
+            console.log(message);
+        }, 3000)
+    }).then(() => { console.log("Program in progess...") })
+    .catch((message) => {
+        console.log("program in progress....")
+        return setTimeout(() => {
+            console.log(message)
+        }, 2000)
+    })

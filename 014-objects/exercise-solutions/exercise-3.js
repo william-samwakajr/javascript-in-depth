@@ -23,12 +23,12 @@
 */
 
 const houseForSale = {
-  area: 940,
-  value: 320000,
-  streetName: "Fifth Street",
-  built: "2021",
-  owner: { name: "Blake", age: 29 },
-  offers: [290000, 295000, 315000, 312000],
+    area: 940,
+    value: 320000,
+    streetName: "Fifth Street",
+    built: "2021",
+    owner: { name: "Blake", age: 29 },
+    offers: [290000, 295000, 315000, 312000],
 };
 console.log(houseForSale);
 
@@ -37,10 +37,10 @@ delete houseForSale.built;
 houseForSale.owner.age = 30;
 
 const maxPrice = houseForSale.offers.reduce((max, price) => {
-  if (max < price) {
-    return price;
-  }
-  return max;
+    if (max < price) {
+        return price;
+    }
+    return max;
 }, 0);
 
 console.log(maxPrice);

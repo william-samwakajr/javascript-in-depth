@@ -8,3 +8,14 @@
     HINT1: Be careful for an infinite loop!
     HINT2: Use CMD+C or CTRL+C to get out of an infinite loop in node
 */
+let loggedIn = false;
+let counter = 0;
+while (counter <= 4) {
+    counter++
+    if (counter <= 3) {
+        console.log("Incorrect login credentials")
+    } else if (counter == 4) {
+        console.log("Sucessfully logged in!")
+    }
+
+};

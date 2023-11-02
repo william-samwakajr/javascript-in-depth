@@ -1,4 +1,7 @@
-const myMap = new Map();
+const myMap = new Map([
+    ["country ", "france"],
+    ["capital", "paris"]
+]);
 
 console.log(myMap);
 

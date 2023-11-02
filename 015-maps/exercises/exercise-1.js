@@ -20,3 +20,21 @@
 
     8. Print out "myPet" to the terminal again
 */
+const myPet = new Map([
+    ['name', 'Sudo'],
+    ['type', 'Dog']
+]);
+
+myPet.set('breed', 'poodle');
+myPet.set('age', 7)
+myPet.set('friends', ["Bit", "Byte", "Data"])
+
+console.log(myPet);
+
+myPet.set('color', 'Black');
+myPet.set('breed', 'Beagle');
+delete myPet.get('friends')[2];
+
+console.log(myPet);
+myPet.get('friends')[2] = "Chip";
+console.log(myPet);

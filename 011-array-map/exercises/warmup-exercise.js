@@ -5,3 +5,8 @@
     
     3. Print out both "practice" and the new mapped array
 */
+const practice = [25, 26, 27, 28, 29, 30];
+const sumOfPractice = practice.map((num) => { return num * num });
+
+console.log(practice);
+console.log(sumOfPractice);

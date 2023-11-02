@@ -20,3 +20,17 @@
 
     8. Print out "myPet" to the terminal again
 */
+const myPet = {
+    name: "sude",
+    type: "Dog",
+    breed: "poodle",
+    age: 7,
+    friends: ["Bit", "Byte", "Data"]
+};
+console.log(myPet);
+myPet.colour = "Black";
+myPet.breed = "beagle"
+delete myPet.friends[2];
+console.log(myPet);
+myPet.friends[2] = "Chip";
+console.log(myPet);

@@ -12,3 +12,12 @@
     BONUS: Try to see if you can make it so that all you need to change
     is the "multiple" variable and the program still works correctly.
 */
+let multiple = 5;
+const numbers = [10, 11, 12, 13, 14, 15];
+
+for (let i = 0; i <= numbers.length; i++) {
+    let multiplier = numbers[i];
+    let producut = multiplier * multiple;
+    let solution = `${multiplier} x ${multiple} = ${producut}`;
+    console.log(solution);
+}

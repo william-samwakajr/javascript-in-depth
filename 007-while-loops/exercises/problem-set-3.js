@@ -20,3 +20,12 @@
 
     HINT: Lookup for "continue" keyword for loops
 */
+let counter = 0;
+while (counter < 100) {
+    counter++;
+    if (counter == 50) {
+        console.log("Hald way there");
+    } else if (counter % 10 == 0) {
+        console.log(`Checkpoint! ${counter}`);
+    }
+}

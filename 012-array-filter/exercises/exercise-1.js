@@ -9,3 +9,11 @@
 
     HINT: Google for "javascript string contains"
 */
+const countries = ["France", "South Africa", "Brazil", "United States", "Sweden"];
+const spacedCountries = countries.filter((country) => {
+    if (country.includes(" ")) {
+        return country;
+    }
+})
+console.log(countries);
+console.log(spacedCountries);

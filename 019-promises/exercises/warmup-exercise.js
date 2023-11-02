@@ -7,3 +7,18 @@
 
     HINT: Use setTimeout for the delay
 */
+
+console.log("Program started");
+const pending = new Promise((resolve, reject) => {
+    if (2 % 2 == 0) {
+        resolve("Program complete")
+    } else {
+        reject("program failed ")
+    }
+});
+pending.then((message) => {
+        return setTimeout(() => {
+            console.log(message);
+        }, 3000)
+    }).then(() => { console.log("Program in progess...") })
+    .catch((message) => { console.log(message) });

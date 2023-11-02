@@ -17,6 +17,18 @@
         2. return back square of num1 + the square of num2
 
     3. Test the function using these:
-     - const sum1 = sumOfSquares(2, 3); // "sum1" should be 13 (4 + 9)
-     - const sum2 = sumOfSquares(3, 4); // "sum1" should be 25 (9 + 16)
+      const sum1 = sumOfSquares(2, 3); // "sum1" should be 13 (4 + 9)
+      const sum2 = sumOfSquares(3, 4); // "sum1" should be 25 (9 + 16)
 */
+function square(num) {
+    return num * num;
+};
+
+function sumOfSquares(num1, num2) {
+    return square(num1) + square(num2);
+};
+const sum1 = sumOfSquares(2, 3); // "sum1" should be 13 (4 + 9)
+const sum2 = sumOfSquares(3, 4); // "sum1" should be 25 (9 + 16)
+
+console.log(sum1);
+console.log(sum2);

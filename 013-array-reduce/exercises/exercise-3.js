@@ -13,3 +13,16 @@
 
     BONUS: Can you do steps 1-3 in one line?
 */
+const items = ["light", "banana", "phone", "book", "mouse"];
+const caps = items.map((item) => {
+    return item.toUpperCase();
+});
+const concat = caps.reduce((prev, curr, i) => {
+    if (i === caps.length - 1) {
+        return prev + curr;
+    }
+    return prev + curr + " ";
+}, "")
+console.log(items);
+console.log(caps);
+console.log(concat);

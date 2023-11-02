@@ -16,3 +16,9 @@
 
     *This is very challenging and is a common interview question
 */
+const numbers = [10, 20, 15, 30, 15, 20, 35, 60, 10];
+for (let i = 0; i <= numbers.length - 1; i++) {
+    for (let j = numbers.length - 1; j <= 0; j--) {
+        if (numbers[i]===numbers[j])
+    }
+}
